@@ -15,13 +15,11 @@ int NumberPow(int number, int pow)
         return 1;
     }
 
-    if (pow > 0)
+    else
     {
         return NumberPow(number, pow - 1) * number;
     }
-    return NumberPow(number, pow - 1);
 }
-System.Console.WriteLine("Результат возведения в степень равен:", NumberPow(3, 5));
-
+System.Console.WriteLine("Результат возведения в степень равен: "+ NumberPow(3, 5));
 
 
